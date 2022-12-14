@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OurResto</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+				<li><a href="menus.html">MENU</a></li>
+				<li><a href="reservation.html">RESERVATIONS</a></li>
+                <li><a href="vosAvis.html">VOS AVIS</a></li>
+				<li><a href="index.html#contact">CONTACT</a></li>
+                
+			</ul>
+		</nav>
+		<div id="entete">
+			<p>
+				<a href="logo_activité1.png"><img class="imgflo" src="logo_activité1_mini.png" alt="logo" /></a>
+			</p>
+			<h1><em>Our Resto <br />Bejaia 06</em></h1>
+			<h2>25 rue de la liberté<br />bejaia 06000</h2>
+		</div>
+	
+	</header>
+    <h2 class="titre"> AVIS DES CLIENTS</h2>
+    <div id="avis" class="avis">
+     <form id="formulaire" method="post" action="#">
+         <div>
+            <p>
+                <label for="pseudo">pseudo </label>
+                <input id="pseudo" type="text" name="pseudo" required>
+             </p>
+              <p>
+                <label for="msg">message </label>
+                <input id="msg" type="text" name="msg" required>
+             </p>
+         </div>
+         <button id="btn">Commenter </button>
+        </form>
+    </div>
+	<footer>
+		<p>
+			Tout Droit reservé. Our Resto 2018.
+		</p>
+	</footer>
+    <script src="avis.js"></script>
+    
+</body>
+</html>

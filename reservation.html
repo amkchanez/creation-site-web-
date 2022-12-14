@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OurResto</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+				<li><a href="menus.html">MENU</a></li>
+				<li><a href="reservation.html">RESERVATIONS</a></li>
+                <li><a href="vosAvis.html">VOS AVIS</a></li>
+				<li><a href="index.html#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+		<div id="entete">
+			<p>
+				<a href="logo_activité1.png"><img class="imgflo" src="logo_activité1_mini.png" alt="logo" /></a>
+			</p>
+			<h1><em>Our Resto <br />Bejaia 06</em></h1>
+			<h2>25 rue de la liberté<br />bejaia 06000</h2>
+		</div>
+	
+	</header>
+	<h2 class="titre"> Reservation</h2>
+	<div class="container">
+		<form method="post" action="#" id="MyForm">
+			<div id="fields">
+			<fieldset class="field">
+				<legend>Vos coordonnées</legend>
+				<p>
+					<label for="nom">Nom:</label>
+					<input type="text" name="nom" id="nom">
+                    <span id="aideNom"></span>
+				</p>
+				<p>
+					<label for="prenom">Preom:</label>
+					<input type="text" name="prenom" id="prenom"><span id="aidePrenom"></span>
+				</p>
+				<p>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email"><span id="aideEmail"></span>	
+				</p>
+				<p>
+					<label for="tel">Tel:</label>
+					<input type="tel" name="tel" id="tel"><span id="aideTel"></span>
+				</p>
+				
+			</fieldset>
+			<fieldset class="field">
+				<legend>Votre réservation</legend>
+				<p>
+					<label for="nbr">Nombre de personnes</label>
+					<input type="number" name="nbr" max="8" min="1">
+				</p>
+				<p>
+					<label for="date">Le jour</label>
+					<input type="date" name="date">
+				</p>
+				<p>
+      				<label for="pays">L'heure</label>
+       				<select name="heure" id="id-heure">
+           				<option value="12:00">12:00</option>
+           				<option value="12:15">12:15</option>
+          				<option value="12:30">12:30</option>
+          				<option value="19:00">19:00</option>
+          				<option value="19:15">19:15</option>
+          				<option value="19:30">19:30</option>
+           				<option value="19:45">19:45</option>
+          				<option value="20:00">20:00</option>
+          				<option value="20:15">20:15</option>
+          				<option value="20:30">20:30</option>
+          				<option value="20:45">20:45</option>
+          				<option value="21:00">21:00</option>
+       				</select>
+  				 </p>
+			</fieldset>
+			</div>
+			<input id="valid-btn" type="submit" name="valider">
+			</form>
+	</div>
+	<footer>
+		<p>
+			Tout Droit reservé. Our Resto 2018.
+		</p>
+	
+	</footer>
+    <script src="test.js"></script>
+</body>
+</html>
